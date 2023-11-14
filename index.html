@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Ubuntu&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a076d5399.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- primary styling file -->
+<link rel="stylesheet" href="src/style.css">
+<!-- add box icon -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Axie Infinity</title>
+</head>
+
+<body>
+    <!-- my header -->
+    <header class="header">
+
+        <!-- hamburger button -->
+        <nav class="hamburger">
+            <input type="checkbox" id="check">
+            <label class="checkbtn" for="check">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+        </nav>
+
+        <!-- primary navitgation -->
+        <label class="logo">AXIE INFINITY</label>
+        <nav class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#portofolio">Portofolio</a>
+            <a href="#menu">Menu</a>
+            <a href="#form" id="openForm">Join</a>
+
+        </nav>
+
+        <!-- light and dark mode indicator -->
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+
+    </header>
+    <!-- header end -->
+    <!-- main content & information -->
+    <section class="home" id="home">
+        <div class="home-content">
+        <h1>Welcome to Axie Infinity</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. laboriosam nisi consequuntur 
+            sint rem quaerat velit. Asperiores, esse itaque!</p>
+
+        <div class="social-media">
+            <a href="https://app.axieinfinity.com/marketplace/axies/" target="blank"><i class='bx bxs-dog' ></i></a>
+            <a href="https://www.instagram.com/axieinfinity/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="blank"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://discord.com/invite/axie" target="blank"><i class='bx bxl-discord-alt' ></i></a>
+            <a href="https://axieinfinity.com/" target="blank"><i class='bx bxs-bank' ></i></a>
+            <a href="https://coinmarketcap.com/currencies/axie-infinity/" target="blank"><i class='bx bx-money-withdraw'></i></a>
+            <a href="https://twitter.com/AxieInfinity?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="blank"><i class='bx bxl-twitter' ></i></a>
+        </div>
+
+        <a href="https://whitepaper.axieinfinity.com/roadmap" class="btn" target="blank">See RoadMap</a>
+        </div>
+        <div class="profile-container">
+            <div class="profile-box">
+                <div class="profile">
+                    <i class='bx bx-play-circle' id="profile1"></i>
+                    <h3> Play to Earn $ </h3>
+                </div>
+                <div class="profile">
+                    <i class='bx bxs-shield-plus' id="profile2"></i>
+                    <h3> Make Strong Team </h3>
+                </div>
+                <div class="profile">
+                    <i class='bx bxs-castle' id="profile3"></i>
+                    <h3> join Community </h3>
+                </div>
+                <div class="profile">
+                    <i class='bx bxs-badge-dollar' id="profile4"></i>
+                    <h3> Trusted BlockChain </h3>
+                </div>
+                <div class="circle"></div>
+            </div>
+            <div class="overlay"></div>
+        </div>
+        <div class="home-img">
+            <img src="assets/AXIE-1.png" alt="axie" />
+        </div>
+    </section>
+    <!-- main ends -->
+    <!-- my about description -->
+    <section class="about" id="about">
+        <div class="about-image">
+            <img src="assets/AXIE-1.1.png" alt="axie2" />
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span> Axie Infinity </span></h2>
+            <h3> We are the fifth Trusted NFT by ETH-BlockChain</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatem libero, nam voluptates quasi quidem distinctio iste. 
+                dolore delectus ad porro et ipsa quos omnis dolorum ea!</p>
+            <a href="https://welcome.skymavis.com/create-wallet/" class="btn" target="blank">I Want to Play</a>
+        </div>
+    </section>
+    <!-- "about" section ends -->
+    <!-- my services -->
+    <section class="portofolio" id="portofolio">
+        <h2 class="heading">Our <span id="dynamicText"> Progress </span> </h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-line-chart' ></i>
+                <h3>Build 4 New Game Feature</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Voluptatem libero, nam voluptates quasi quidem distinctio iste. 
+                    dolore delectus ad porro et ipsa quos omnis dolorum ea!</p>
+                <a href="https://chainplay.gg/blog/axie-infinity-shocked-world-2022-accomplishments-challenges/" class="btn" target="blank">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-money' ></i>
+                <h3>95% Revenues For Players</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Voluptatem libero, nam voluptates quasi quidem distinctio iste. 
+                    dolore delectus ad porro et ipsa quos omnis dolorum ea!</p>
+                <a href="https://duniagames.co.id/discover/article/sebelum-membeli-koin-di-axie-infinity-axs/en" class="btn" target="blank">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-network-chart' ></i>
+                <h3>Strong Team Build</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Voluptatem libero, nam voluptates quasi quidem distinctio iste. 
+                    dolore delectus ad porro et ipsa quos omnis dolorum ea!</p>
+                <a href="https://whitepaper.axieinfinity.com/team" class="btn" target="blank">Read More</a>
+            </div>
+        </div>
+
+    </section>
+    <!-- service section end -->
+    <!-- my form to join -->
+    <section class="menu" id="menu">
+        <h2 class="heading">Let The Fun <span>BEGINS</span></h2>
+
+        <div class="menu-container">
+            <div class="menu-box">
+                <img src="/milestone-1-SamuelAlvianM/assets/menu-item8.jpg" alt="" />
+                <div class="menu-layer">
+                    <h4>Axie Infinity: Origins</h4>
+                    <p>Original Version game</p>
+                    <a href="https://app.axieinfinity.com/games/origins/" target="blank"><i class='bx bx-link-alt' ></i></a>
+                </div>
+            </div>
+            <div class="menu-box">
+                <img src="/milestone-1-SamuelAlvianM/assets/menu-item-9.jpg" alt="" />
+                <div class="menu-layer">
+                    <h4>Axie Infinity: Homeland</h4>
+                    <p>Start your own village on the breathtaking planet of Lunacia. </p>
+                    <a href="https://app.axieinfinity.com/games/homeland/" target="blank"><i class='bx bx-link-alt' ></i></a>
+                </div>
+            </div>
+            <div class="menu-box">
+                    <img src="/milestone-1-SamuelAlvianM/assets/bg-axs-1.jpg" alt="" />
+                <div class="menu-layer">
+                    <h4>Axie Classic</h4>
+                    <p>Classic, released in December 2019, grew the Axie community from a ragtag band of a few hundred missionaries to millions. </p>
+                    <a href="https://app.axieinfinity.com/games/classic/" target="blank"><i class='bx bx-link-alt' ></i></a>
+                </div>
+            </div>
+            <div class="menu-box">
+                    <img src="/milestone-1-SamuelAlvianM/assets/menu-item-10.jpg" alt="" />
+                <div class="menu-layer">
+                    <h4>Axie Infinity: Raylights</h4>
+                    <p>Join forces with fellow to create the most stunning land plots in Lunacia.</p>
+                    <a href="https://app.axieinfinity.com/games/raylights/" target="blank"><i class='bx bx-link-alt' ></i></a>
+                </div>
+            </div>
+            <div class="menu-box">
+                    <img src="/milestone-1-SamuelAlvianM/assets/menu-item-11.png" alt="" />
+                <div class="menu-layer">
+                    <h4>Defence of Lunacian Land</h4>
+                    <p>The game is designed with competition at its core. 
+                        A leaderboard is maintained to prove your skills to global community.</p>
+                    <a href="https://app.axieinfinity.com/games/doll/" target="blank"><i class='bx bx-link-alt' ></i></a>
+                </div>
+            </div>
+            <div class="menu-box">
+                    <img src="/milestone-1-SamuelAlvianM/assets/menu-item-12.png" alt="" />
+                <div class="menu-layer">
+                    <h4>Project T prototype</h4>
+                    <p> Axie game developed by Sky Mavis where players can interact with their Axies and fellow Axie owners like a digital meetup!</p>
+                    <a href="https://app.axieinfinity.com/games/project-t/" target="blank"><i class='bx bx-link-alt' ></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- form end -->
+    
+    <!-- my form to join -->
+    <section id="form">
+
+    </section>
+    <!-- form end -->
+    <!-- footer -->
+    <section id="footer">
+
+    </section>
+    <!-- footer end -->
+    <script src="src/script.js"></script>
+</body>
+</html>
