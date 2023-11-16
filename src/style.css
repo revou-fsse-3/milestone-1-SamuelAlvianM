@@ -723,7 +723,7 @@ span {
 /* MDEIA QUERY */
 
 /* MEDIA QUERY 1 */
-@media (max-width: 1500px) {
+@media screen and (max-width: 1500px) {
     html {
         font-size: 85%;
     }
@@ -754,7 +754,7 @@ span {
 /* MEDIA QUERY 1 BERES */
 
 /* MEDIA QUERY 2 */
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     html {
         font-size: 75%;
     }
@@ -786,7 +786,7 @@ span {
 
 /* MEDIA QUERY 2 BERES */
 
-@media (max-width: 1050px) {
+@media screen and (max-width: 1050px) {
 
     header {
         padding: 1rem 3%;
@@ -843,7 +843,7 @@ span {
 
 /* MEDIA QUERY 3 adjust grid */
 
-@media (max-width: 950px) {
+@media screen and (max-width: 950px) {
 
     section .heading {
         font-size: 4rem;
@@ -864,7 +864,7 @@ span {
 
 /* MEDIA QUERY 4 */
 
-@media (max-width: 910px) {
+@media screen and (max-width: 910px) {
     #menu-icon {
         display: block;
         font-size: 2.6rem;
@@ -1018,7 +1018,7 @@ span {
     }
 }
 
-@media (max-width: 740px) {
+@media screen and (max-width: 740px) {
     .services-container .services-box {
         height: 40rem;
     }
@@ -1045,7 +1045,17 @@ span {
 
 }
 
-@media (max-width: 560px) {
+@media screen and (max-width: 560px) {
+
+    .portofolio .services-container{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .services-container .services-box {
+        width: 20rem; 
+        height: 30rem; 
+    }
     .services-container .services-box {
         height: 35rem;
     }
@@ -1054,10 +1064,10 @@ span {
         line-height: 2;
     }
     .services-container .services-box h3{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .services-container .services-box p{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     .services-box .btn {
         margin-top: 1rem;
@@ -1068,14 +1078,13 @@ span {
     }
 }
 
-@media (max-width: 450px) {
+@media screen and (max-width: 450px) {
     html {
         font-size: 65%;
     }
     .portofolio .services-container{
         display: flex;
         flex-direction: column;
-        align-items: center;
         gap: 2rem;
     }
     .services-container .services-box {
