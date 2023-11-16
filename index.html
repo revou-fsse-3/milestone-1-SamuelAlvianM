@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Ubuntu&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/a076d5399.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <!-- primary styling file -->
@@ -23,15 +20,6 @@
     <!-- my header -->
     <header class="header">
 
-        <!-- hamburger button -->
-        <nav class="hamburger">
-            <input type="checkbox" id="check">
-            <label class="checkbtn" for="check">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-        </nav>
-
         <!-- primary navitgation -->
         <label class="logo">AXIE INFINITY</label>
         <nav class="nav-links">
@@ -39,12 +27,16 @@
             <a href="#about">About</a>
             <a href="#portofolio">Portofolio</a>
             <a href="#menu">Menu</a>
+            <a href="#Carousel">Preview</a>
             <a href="#form" id="openForm">Join</a>
 
         </nav>
 
         <!-- light and dark mode indicator -->
         <div class="bx bx-moon" id="darkMode-icon"></div>
+
+        <!-- hamburger button -->
+        <div class="bx bx-menu" id="menu-icon"></div>
 
     </header>
     <!-- header end -->
@@ -105,7 +97,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatem libero, nam voluptates quasi quidem distinctio iste. 
                 dolore delectus ad porro et ipsa quos omnis dolorum ea!</p>
-            <a href="https://welcome.skymavis.com/create-wallet/" class="btn" target="blank">I Want to Play</a>
+            <a href="https://welcome.skymavis.com/create-wallet/" class="btn" target="blank">STEPS BEFORE PLAY</a>
         </div>
     </section>
     <!-- "about" section ends -->
@@ -136,13 +128,14 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Voluptatem libero, nam voluptates quasi quidem distinctio iste. 
                     dolore delectus ad porro et ipsa quos omnis dolorum ea!</p>
-                <a href="https://whitepaper.axieinfinity.com/team" class="btn" target="blank">Read More</a>
+                <a href="https://blog.axieinfinity.com/p/axiecreatorprogram" class="btn" target="blank">Read More</a>
             </div>
         </div>
 
     </section>
     <!-- service section end -->
-    <!-- my form to join -->
+
+    <!-- my GAMES MENU links -->
     <section class="menu" id="menu">
         <h2 class="heading">Let The Fun <span>BEGINS</span></h2>
 
@@ -198,17 +191,60 @@
             </div>
         </div>
     </section>
-    <!-- form end -->
-    
+    <!-- game menu links end -->
+
+    <!-- make a preview design -->
+    <section class="Preview-container" id="Carousel" aria-label="Gallery">
+        <h2 class="heading">A Little <span>BOOST</span> For You</h2>
+
+        <div class="Preview-wrapper">
+            <div class="Preview-box">
+                <div class="Preview-content">
+                    <div class="Preview-item" >
+                        <iframe src="https://www.youtube.com/embed/X2z_YIeettE" title="Axie Infinity: Origins - Official Gameplay Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- preview design end -->
+
     <!-- my form to join -->
-    <section id="form">
+    <section class="contact" id="form">
+        <h2 class="heading">Contribute With <span>Us!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="FullName">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Whatsapp">
+                <input type="text" placeholder="LinkedIn">
+            </div>
+            <textarea placeholder="Your Message For Us" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="Send Message!" class="btn">
+        </form>
 
     </section>
     <!-- form end -->
     <!-- footer -->
-    <section id="footer">
+    <footer class="footer">
+        <div class="footer-text">
+            <p> Copyright &copy; 2023 by Samuel Alvian Mahardika | All Right. </p>
+        </div>
 
-    </section>
+        <div class="footer-icon">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+
+
+    </footer>
     <!-- footer end -->
     <script src="src/script.js"></script>
 </body>
