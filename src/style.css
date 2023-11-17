@@ -23,6 +23,25 @@
     background-color: yellow;
 }
 
+.dark-mode {
+    --wm-color1: #511281;
+    --font-c1: #2C272E;
+    --font-c2: #fdfdfd;
+    --wm-color2: #511281;
+    --dm-color1: #A5E1AD;
+    --dm-color2: #4CA1A3;
+    --bg-color: #21094E;
+
+}
+@media (prefers-color-scheme: dark-mode) {
+    body {
+        --text-color-dark:var(--bg-color);
+    }
+    home {
+        background: linear-gradient(to bottom, var(--dm-color2)50%, var(--font-c1)70%);
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -280,7 +299,7 @@ section {
     color: var(--font-c2);
     transform: rotate(calc(360deg / 4 * var(--i)));
     transform-origin: 400px;
-    background-color: var(--bg-color);
+    background-color: var(--font-c1);
 }
 
 .home .profile h3{

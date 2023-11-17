@@ -49,3 +49,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 500);
     }
 });
+
+
+// LDM
+const LDM = document.querySelector('#darkMode-icon');
+
+LDM.onclick = () => {
+    LDM.classList.toggle('bx-sun');
+    document.body.classList.toggle('dark-mode');
+};
