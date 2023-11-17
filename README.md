@@ -8,7 +8,11 @@ Welcome to my first milestone!
 
 ## Table of Contents
 
-1. [Structuring Your Project](#structuring-your-project)
+1. [Structuring My Project](#structuring-my-project)
+   - [Project Folder](#project-folder)
+   - [File Structure](#file-structure)
+
+2. [Clone GitHub Into My Local Files][def]
    - [Project Folder](#project-folder)
    - [File Structure](#file-structure)
 
@@ -72,7 +76,36 @@ $\textsf{\color{Green}}$
 </html>
 ```
 
-### II. Clone Milestone GitHub Into My Local Files
+
+### II. Clone GitHub Into My Local Files
+
+```bash
+
+<!-- Move to your local workspace -->
+$ cd new-folder
+
+<!-- Make a new file or folder -->
+$ mkdir your-folder 
+$ mkdir my-file.html
+
+<!-- For cloning -->
+$ git clone https://github.com/revou-fsse-3/milestone-1-SamuelAlvianM.git
+
+<!-- Check if your GitHub is connected -->
+Viole@MSI MINGW32 /c/milestone1SE/milestone-1-SamuelAlvianM (main)
+$ ls
+README.md  assets/  index.html  src/
+
+Viole@MSI MINGW32 /c/milestone1SE/milestone-1-SamuelAlvianM (main)
+$ dir
+README.md  assets  index.html  src
+
+Viole@MSI MINGW32 /c/milestone1SE/milestone-1-SamuelAlvianM (main)
+$ ls -a
+./  ../  .git/  README.md  assets/  index.html  src/ 
+# under "$" is the result of your command
+```
+![my git clone](assets/markdown/CLONE-GITHUB.png)
 
 ### III. Synchronize My GitHub to Netlify
 
@@ -112,9 +145,210 @@ $\textsf{\color{Green}}$
 
 ### IV. Make my HTML
 
+I Use HTML 5 to this project and I make my web pages using semantics like:
+>body, header, section, footer, and form.
+
+> This is my all pages look like:
+>![#1](assets/markdown/PAGE-1-HTML.jpg)
+>![#2](assets/markdown/PAGE-2-HTML.jpg)
+>![#3](assets/markdown/PAGE-3-HTML.jpg)
+>![#4](assets/markdown/PAGE-4-HTML.jpg)
+>![#5](assets/markdown/PAGE-5-HTML.jpg)
+>![#6](assets/markdown/PAGE-6-HTML.jpg)
+
+
+I have 6 Section and each of my section conatins my content:
+```html
+    <!-- add my navigation and darkmode toggle with header -->
+    <header class="header"> </header>
+
+    <!-- my first page Opening/ the first view -->
+    <section class="home" id="home"></section>
+
+    <!-- my second page  -->
+    <section class="about" id="about"></section>
+
+    <!-- my third page Games Menu linked to another directory-->
+    <section class="menu" id="menu"></section>
+
+    <!-- my fourth page preview taken from youtube  -->
+    <section class="Preview-container" id="Carousel" aria-label="Gallery"><section> 
+
+    <!-- my fifth page  -->
+    <section class="contact" id="form"></section>
+
+    <!-- my sixth page  -->
+    <footer class="footer"></footer>
+
+```
+
+#### - Web Links -
+Every Link is opened at new window so my website won't be closed. I'm Using:
+```html
+<!-- EXAMPLE MY "HOME" SECTION  -->
+        <div class="social-media">
+            <a href="https://app.axieinfinity.com/marketplace/axies/" target="blank"><i class='bx bxs-dog' ></i></a>
+        </div>
+```
+>+ $\textsf{\color{red} href }$ - Defines my link to another website or my internal web page.
+>+ $\textsf{\color{red} target="blank" }$ - Directing your link to a new Window on your browser when it clicked.
+>+ $\textsf{\color{red} class="class-name" }$ - Unique Selector when you Styling with CSS.
+
+#### Button and Form
+
+I'm using this code to make my buttons on every section and This also how i make my  form
+
+```html
+<!-- EXAMPLE MY "HOME" SECTION  -->
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="FullName">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Whatsapp">
+                <input type="text" placeholder="LinkedIn">
+            </div>
+            <textarea placeholder="Your Message For Us" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="Send Message!" class="btn">
+        </form>
+        <!-- you can also add -->
+        <label for="Full Name">Full Name </label>
+        <!-- for giving name to your input area  -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+
+```
+
+>+ $\textsf{\color{red} form }$ - Defines you want to make a form on your web page.
+>+ $\textsf{\color{red} label }$ - giving an information to your **input type** name list on your form.
+>+ $\textsf{\color{red} input }$ - Make space for user to input their information as you need.
+>+ $\textsf{\color{red} class="btn" }$ - styled with CSS and it can be clicked to run something like "action" or your next steps like 
+>+ $\textsf{\color{red} value="yout text" }$ - Give a name for your button, it's not just a text, 
+>> 1. You can show your button with icon using **i Class** in **a href** and style it like button.
+>> 2. You can also use tag "span" to make buttons.
+
+
 ### V. Styling With CSS
+The provided CSS code defines the styling for a website using custom properties, media queries, and keyframes for animations. The website features a responsive design with adjustments for different screen sizes, a dark mode, and creative elements such as animated profiles and gradient backgrounds.
+
+
+
+
+
+
+
 
 ### VI. Add My Milestone with "Some Sweets" with JavaScript
+
+This markdown document provides a detailed explanation of the JavaScript code for a website, covering features such as a toggle for a hamburger menu, a sticky navbar with scroll section active links, dynamic text changes, and dark mode toggle.
+
+## 1. Hamburger Menu Toggle
+
+```javascript
+// make toggle for hamburger
+const menuIcon = document.querySelector('#menu-icon');
+const navbar = document.querySelector('.nav-links');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x-circle');
+    navbar.classList.toggle('active');
+};
+```
+>![Alt text](<assets/markdown/Untitled design.jpg>)
+
+This section of the code handles the toggle functionality for the hamburger menu. It selects the menu icon and the navigation bar, toggling the 'bx-x-circle' class on the menu icon and the 'active' class on the navigation bar when the menu icon is clicked.
+
+## 2. Sticky Navbar & Scroll Section Active Link
+
+```javascript
+// sticky navbar & scroll section active link
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('header nav a');
+
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+
+        if (top >= offset && top < offset + height) {
+            navLinks.forEach(Links => {
+                Links.classList.remove('active');
+                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+            });
+        }
+    });
+
+    let header = document.querySelector('.header');
+
+    header.classList.toggle('sticky', window.scrollY > 100);
+
+    menuIcon.classList.remove('bx-x-circle');
+    navbar.classList.remove('active');
+};
+```
+This part of the code manages the sticky navbar and the active link highlighting as the user scrolls through different sections. It utilizes the 'onscroll' event to determine the active section based on the user's scroll position and updates the navigation links accordingly. Additionally, it toggles the 'sticky' class on the header when the user scrolls more than 100 pixels.
+
+>![STICKY](<assets/markdown/NAV STICKY.jpg>)
+
+## 3. Dynamic Text Change
+
+```javascript
+document.addEventListener('DOMContentLoaded', function () {
+    const dynamicWord = document.getElementById('dynamicText');
+    const words = ['Service', 'Progress', 'Achievements'];
+    let index = 0;
+
+    function changeWord() {
+        dynamicWord.style.opacity = 0;
+        setTimeout(function () {
+            dynamicWord.textContent = words[index];
+            dynamicWord.style.opacity = 1;
+            index = (index + 1) % words.length;
+        }, 500);
+    }
+    // Call changeWord initially
+    changeWord();
+
+    // Set up an interval to call changeWord every, for example, 2000 milliseconds (2 seconds)
+    setInterval(changeWord, 2000);
+});
+```
+This part of the code dynamically changes text content in an element with the id 'dynamicText' on the document load. It defines an array of words and utilizes a 'changeWord' function to cycle through these words with a fade effect.
+>![DYNAMIC](<assets/markdown/DYNAMIC WORD.jpg>)
+
+## 4. Dark Mode Toggle
+
+```javascript
+// LDM
+const LDM = document.querySelector('#darkMode-icon');
+
+LDM.onclick = () => {
+    LDM.classList.toggle('bx-sun');
+    document.body.classList.toggle('dark-mode');
+};
+```
+
+>![Alt text](assets/markdown/LDM.jpg)
+
+The last part of the code handles the dark mode toggle. It selects the element with the id 'darkMode-icon' and toggles the 'bx-sun' class on it. Simultaneously, it toggles the 'dark-mode' class on the body element, allowing for a switch between dark and light modes.
+
+This JavaScript code combines various functionalities to enhance the user experience on the website, providing interactive features and dynamic content updates.
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### VII. Deploy My Content to Custom Domain
 
@@ -143,4 +377,6 @@ $\textsf{\color{Green}}$
 + If it does, your custom domain or your website is online now.
 
 ![STEP 4.2](assets/markdown/4s1.2.jpg)
+
+
 

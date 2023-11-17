@@ -33,7 +33,7 @@ header.classList.toggle('sticky', window.scrollY > 100);
 
 menuIcon.classList.remove('bx-x-circle');
 navbar.classList.remove('active');
-}
+};
 
 document.addEventListener('DOMContentLoaded', function () {
     const dynamicWord = document.getElementById('dynamicText');
@@ -48,6 +48,12 @@ document.addEventListener('DOMContentLoaded', function () {
             index = (index + 1) % words.length;
         }, 500);
     }
+
+    // Call changeWord initially
+    changeWord();
+
+    // Set up an interval to call changeWord every, for example, 2000 milliseconds (2 seconds)
+    setInterval(changeWord, 2000);
 });
 
 
