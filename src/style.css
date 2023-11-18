@@ -106,7 +106,7 @@ header {
 .logo {
     font-size:1.5rem;
     color: var(--wm-color2);
-    text-shadow: 2px 2px 1px var(--dm-color2);
+    text-shadow: 2px 2px 2px var(--dm-color2) ;
     font-weight: 400;
     cursor: default;
     margin-right: auto;
@@ -141,6 +141,7 @@ header {
 #darkMode-icon{
     font-size: 2rem;
     color: var(--font-c1);
+    text-shadow: 0.5px 0.5px 1px var(--font-c2);
     cursor: pointer;
 }
 
@@ -168,7 +169,7 @@ section {
     font-weight: 550;
     line-height: 1.5;
     color: var(--wm-color1);
-    text-shadow: 2px 2px 3px var(--font-c2);
+    text-shadow: 1px 1px 20px var(--font-c2);
     margin-bottom: 1rem;
 }
 
@@ -185,7 +186,7 @@ section {
     /* background: var(--bg-color); */
     border: .2rem solid var(--dm-color2);
     border-radius: 50%;
-    text-shadow: 3px 2px 2px var(--font-c2);
+    text-shadow: 1.5px 2px 1px var(--font-c2);
     box-shadow: 2px 2px 3px var(--shadow-color);
     font-size: 2rem;
     color: var(--wm-color1);
@@ -1100,6 +1101,10 @@ span {
 @media screen and (max-width: 450px) {
     html {
         font-size: 65%;
+    }
+
+    .home {
+        padding: 5rem 3% 36rem;
     }
     .portofolio .services-container{
         display: flex;
