@@ -24,7 +24,7 @@
 }
 
 .dark-mode {
-    --wm-color1: #511281;
+    --wm-color1: #a83afc;
     --font-c1: #2C272E;
     --font-c2: #fdfdfd;
     --wm-color2: #511281;
@@ -105,8 +105,8 @@ header {
 /* ADJUST LOGO */
 .logo {
     font-size:1.5rem;
-    color: var(--wm-color2);
-    text-shadow: 2px 2px 2px var(--dm-color2) ;
+    color: var(--wm-color1);
+    text-shadow:1px 1px 2px var(--font-c2) ;
     font-weight: 400;
     cursor: default;
     margin-right: auto;
@@ -169,7 +169,7 @@ section {
     font-weight: 550;
     line-height: 1.5;
     color: var(--wm-color1);
-    text-shadow: 1px 1px 20px var(--font-c2);
+    text-shadow: 1px 1px 2px var(--font-c2);
     margin-bottom: 1rem;
 }
 
@@ -845,7 +845,7 @@ span {
     }
 
     .logo {
-        color: var(--wm-color2);
+        color: var(--wm-color1);
     }
 
     .home .profile-container .overlay {
@@ -960,7 +960,7 @@ span {
     }
 
     .logo {
-        color: var(--font-c1);
+        color: var(--wm-color1);
     }
 
     .home-img img{
