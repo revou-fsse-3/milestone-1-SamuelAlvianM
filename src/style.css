@@ -837,7 +837,7 @@ span {
     }
 
     .logo {
-        color: var(--wm-color1);
+        color: var(--wm-color2);
     }
 
     .home .profile-container .overlay {
@@ -952,7 +952,7 @@ span {
     }
 
     .logo {
-        color: var(--wm-color1);
+        color: var(--wm-color2);
     }
 
     .home-img img{
