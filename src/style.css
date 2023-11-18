@@ -30,16 +30,8 @@
     --wm-color2: #511281;
     --dm-color1: #A5E1AD;
     --dm-color2: #4CA1A3;
-    --bg-color: #21094E;
+    --bg-color: #2C272E;
 
-}
-@media (prefers-color-scheme: dark-mode) {
-    body {
-        --text-color-dark:var(--bg-color);
-    }
-    home {
-        background: linear-gradient(to bottom, var(--dm-color2)50%, var(--font-c1)70%);
-    }
 }
 
 *{
